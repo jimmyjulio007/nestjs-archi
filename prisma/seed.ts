@@ -111,7 +111,7 @@ async function main() {
 
     const result = await prisma.post.createMany({ data: posts });
 
-    console.log(`✅ Seed completed: inserted ${result.count} posts`);
+    console.log(`Seed completed: inserted ${result.count} posts`);
 }
 
 main()

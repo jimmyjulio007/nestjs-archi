@@ -6,6 +6,7 @@ import { DeletePostService } from '@modules/post/application/service/delete-post
 import { GetPostsService } from '@modules/post/application/service/get-post.service';
 import { PrismaModule } from '@app/prisma.module';
 import { PrismaPostRepository } from './infrastructure/post/post.repo.prisma';
+import { GetAPostService } from './application/service/get-postid.service';
 
 @Module({
     imports: [PrismaModule],
@@ -21,6 +22,7 @@ import { PrismaPostRepository } from './infrastructure/post/post.repo.prisma';
         GetPostsService,
         UpdatePostService,
         DeletePostService,
+        GetAPostService
     ],
 })
 export class PostModule { }

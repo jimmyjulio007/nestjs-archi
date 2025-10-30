@@ -1,10 +1,8 @@
-version: "3.8"
-
 services:
   postgres:
     image: postgres:16
-    restart: always
     container_name: nestjs_dddp_postgres
+    restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -15,4 +13,4 @@ services:
       - pg_data:/var/lib/postgresql/data
 
 volumes:
-  pg_data: {}
+  pg_data:
